@@ -1,4 +1,4 @@
-package com.pdoming.kernel.core.ddd;
+package com.pdomingo.kernel.core.ddd;
 
 import java.time.Instant;
 
@@ -13,12 +13,12 @@ public abstract class BaseDomainEvent<ID extends Identifiable> implements Domain
 	}
 
 	@Override
-	public ID getSourceId() {
+	public ID sourceId() {
 		return sourceId;
 	}
 
 	@Override
-	public Instant getTimestamp() {
+	public Instant timestamp() {
 		return timestamp;
 	}
 }

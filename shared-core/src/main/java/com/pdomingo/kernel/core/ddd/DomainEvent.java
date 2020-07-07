@@ -1,8 +1,8 @@
-package com.pdoming.kernel.core.ddd;
+package com.pdomingo.kernel.core.ddd;
 
 import java.time.Instant;
 
 public interface DomainEvent<ID extends Identifiable> {
-	ID getSourceId();
-	Instant getTimestamp();
+	ID sourceId();
+	Instant timestamp();
 }

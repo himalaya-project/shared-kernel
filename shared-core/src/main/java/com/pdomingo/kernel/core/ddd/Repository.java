@@ -1,4 +1,4 @@
-package com.pdoming.kernel.core.ddd;
+package com.pdomingo.kernel.core.ddd;
 
 import java.util.Optional;
 

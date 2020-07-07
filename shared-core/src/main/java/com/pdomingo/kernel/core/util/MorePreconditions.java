@@ -1,4 +1,4 @@
-package com.pdoming.kernel.core.util;
+package com.pdomingo.kernel.core.util;
 
 public final class MorePreconditions {
 
@@ -6,5 +6,10 @@ public final class MorePreconditions {
 		if (charSequence == null) throw new NullPointerException("Field <"+fieldName+"> cannot be null");
 		if (charSequence.length() == 0) throw new IllegalArgumentException("Field <"+fieldName+"> cannot be empty");
 		return charSequence;
+	}
+
+	public static long checkGreaterThan(long numericValue, long comparisonValue, String fieldName) {
+		if (numericValue <= comparisonValue) throw new IllegalArgumentException("Field <"+fieldName+"> cannot be lower than");
+		return numericValue;
 	}
 }
